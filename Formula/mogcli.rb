@@ -5,21 +5,21 @@
 class Mogcli < Formula
   desc "Microsoft 365 in your terminal"
   homepage "https://github.com/jaredpalmer/mogcli"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jaredpalmer/mogcli/releases/download/v0.0.1/mogcli_0.0.1_darwin_amd64.tar.gz"
-      sha256 "cf03648fccd2d91ab9a85960bf5e931142db42e54ce47eb152560a3c11667020"
+      url "https://github.com/jaredpalmer/mogcli/releases/download/v0.0.2/mogcli_0.0.2_darwin_amd64.tar.gz"
+      sha256 "ca3ba5333a1c0ee70f7271ead92c56e13d96d4841ce9cbfde1024f3b456803f7"
 
       def install
         bin.install "mog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jaredpalmer/mogcli/releases/download/v0.0.1/mogcli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "b7124959eb2dca68074f54b9c0475febf2d897f1b8bd28c7a415d7dd1144560e"
+      url "https://github.com/jaredpalmer/mogcli/releases/download/v0.0.2/mogcli_0.0.2_darwin_arm64.tar.gz"
+      sha256 "0d939dcd5b28167b00f930346e02aa4493fb582268cd729783a7ca77639c90c1"
 
       def install
         bin.install "mog"
@@ -29,15 +29,15 @@ class Mogcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaredpalmer/mogcli/releases/download/v0.0.1/mogcli_0.0.1_linux_amd64.tar.gz"
-      sha256 "44fea74d3c6a2fbffbf0f1c95545ee43c8368fc19a930ec4f990fd60a275265c"
+      url "https://github.com/jaredpalmer/mogcli/releases/download/v0.0.2/mogcli_0.0.2_linux_amd64.tar.gz"
+      sha256 "fccca5cab7235df98e0b27dad654ebdb42b05996428481fcee46feb5e730274b"
       def install
         bin.install "mog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaredpalmer/mogcli/releases/download/v0.0.1/mogcli_0.0.1_linux_arm64.tar.gz"
-      sha256 "4833180b27e901f7fa88f29bc5644a575c1d19407953a7901947a329b271de2a"
+      url "https://github.com/jaredpalmer/mogcli/releases/download/v0.0.2/mogcli_0.0.2_linux_arm64.tar.gz"
+      sha256 "9ebfcb9c1e41dff4aeb1f6e0548962ce6814b91bd8e06e68d93301b46c40a45c"
       def install
         bin.install "mog"
       end
